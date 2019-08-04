@@ -1,40 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<html lang="pl">
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+</head>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+<body class="body">
+    <header id="top" class="site-header">
+        <nav class="navigation">
+            <ul class="navigation__list navigation__list--js">
+                <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="poniedzialek.html">Poniedziałek</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="wtorek.html">Wtorek</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="sroda.html">Środa</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="czwartek.html">Czwartek</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="piatek.html">Piątek</a></li>
+            </ul>
+        </nav>
+        <button class="navigation__switcher navigation__switcher--js" aria-lebel="Otwórz menu">☰</button>
+    </header>
+    <main class="main">
+        <header class="header">
+            <h1 class="header__title header__title--js">Pamiętnik programisty</h1>
+            <button class="header__button header__button--js">zmień treść nagłówka</button>
+        </header>
+        <div class="grid">
+            <section class="about">
+                <div class="box">Co ten frontend?</div>
+                <h2 class="about__header">HTML</h2>
+                <section>
+                    <h3 class="about__title">Na początek HTML</h3>
+                    <p class="about__paragraph about__paragraph--js">
+                        <img src="assets/img/pierogi.jpg" alt="Pierogi" class="about__picture" />
+                        Pierwszym naszym zadaniem jest poznanie HTML. Uczymy się składni i tworzymy
+                        szkielet strony. HTML
+                        wpływa na treść strony. Kod HTML jest semantyczny, tzn. ma znaczenie. Można powiedzieć, że HTML
+                        jest
+                        szkieletem strony.<br>
+                        <a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTMLa</a>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hakuna matata :) !!!</h1>
+                    </p>
+                    <section class="hobby">
+                        <ul class="hobby__list">
+                            <li>Piłka nożna</li>
+                            <li>Książki szpiegowskie</li>
+                            <li>Koleje</li>
+                        </ul>
+                    </section>
+                    <section class="plan">
+                        <ol>
+                            <li>Zmień pracę</li>
+                            <li>Weź kredyt</li>
+                            <li>Zrób coś</li>
+                        </ol>
+                    </section>
+                </section>
+            </section>
 
+            <section class="about">
+                <h2 class="about__header">CSS</h2>
+                <section>
+                    <h3 class="about__title">Później jest CSS</h3>
+                    <p class="about__paragraph about__paragraph--js">Kolejnym elementem, który poznajemy to CSS. Są to
+                        kaskadowe arkusze stylów.
+                        Odpowiadają one za
+                        prezentację. CSS wpływa na wygląd elementów HTML na ekranie. Składnia CSS to reguły.</p>
+                </section>
+                <a class="link" href="#javascript">Przejdź do JavaScriptu</a>
+            </section>
+
+            <section class="about" id="javascript">
+                <h2 class="about__header">JavaScript</h2>
+                <section>
+                    <h3 class="about__title">Na samym końcu mamy JavaScript</h3>
+                    <p class="about__paragraph about__paragraph--js">JavaScript to język programowania. Odpowiada on za
+                        interakcję. Pozwala na
+                        programowanie we
+                        frontendzie. Potrafi wpływać na każdą z warstw. Rozszerza możliwości zwykłych stron.
+                    </p>
+                    <js class="about__test about__test--js"></js>
+                </section>
+            </section>
+        </div>
+
+        <section class="data">
+            <table class="table">
+                <caption>Oceny z kursu CoTenFrontend</caption>
+                <thead>
+                    <tr>
+                        <th>Imię Nazwisko</th>
+                        <th>Ocena</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maciej Latasz</td>
+                        <td>4</td>
+                        <td>15.07.2019</td>
+                    </tr>
+                    <tr>
+                        <td>Jan Nowak</td>
+                        <td>3</td>
+                        <td>16.07.2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <a href="#top" class="top">Na górę</a>
+        Jeszcze będzie ze mnie frontendowiec. ML
+    </footer>
     <script src="js/main.js"></script>
-  </body>
+
+
+</body>
+
 </html>
