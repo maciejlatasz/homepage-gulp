@@ -10,7 +10,158 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  color: $yellow;
-  background: $violet;
+.body {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(340deg, rgba(2, 0, 36, 1) 0%, rgba(218, 226, 228, 0.9920168751094187) 9%, rgba(0, 212, 255, 1) 100%);
+	color: #333;
 }
+
+.about {
+	max-width: 700px;
+  padding: 16px;
+  &__header {
+    color: rgb(97, 95, 228);
+    font-size: 20px;
+    &::before {
+      content: "-";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-right: 5px;
+      background: yellow;
+    }
+    &::after {
+      content: "-";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-right: 5px;
+      background: rgb(65, 201, 99);
+    }
+  }
+  &__paragraph {
+    padding: 16px;
+    overflow: hidden;
+  }
+  &__picture {
+    width: 100%;
+	  max-width: 100px;
+	  display: block;
+	  float: left;
+	  margin: 0 16px 16px 0;
+  }
+  &__title {
+    color: red;
+	  font-style: italic;
+  }
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	background: yellowgreen;
+	padding: 10px;
+	border: 10px solid red;
+	margin: 10px;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 16px; 
+}
+
+.header {
+  &__title {
+    color: darkblue;
+    &--red {
+      color: darkred;
+    }
+  }
+}
+
+.hobby {
+  &__list {
+    list-style: none;
+  }
+}
+
+.main {
+	width: 100%;
+	max-width: 700px;
+	margin: 32px auto;
+	padding-top: 32px;
+}
+
+.navigation {
+  &__item {
+    display: block;
+	  margin: 0 16px;
+  }
+  &__link {
+    color: #1a936F;
+  }
+  &__list {
+    list-style: none;
+	  padding: 0;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+}
+
+p {
+	color: rgb(78, 45, 224);
+}
+
+.top {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	color: #1a936f;
+	text-decoration: none;
+}
+
+.site-header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 16px;
+	background: #fff;
+	z-index: 10;
+}
+
+
+@media (max-width: 640px) {
+	.navigation__list {
+		flex-direction: column;
+		display: none;
+		}
+	.navigation__list--visible{
+		display: flex;
+	}
+	.navigation__item {
+		margin: 16px;
+	}
+	.navigation__switcher {
+		border: none;
+		background: none;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
+	.site-header {
+		min-height: 48px;
+	}
+}
+
+@media (min-width: 641px) {
+	.navigation__switcher {
+		display: none;
+	}
+} 
