@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -320,7 +321,8 @@ html {
   background: -webkit-linear-gradient(110deg, #020024 0%, rgba(218, 226, 228, 0.992017) 9%, #00d4ff 100%);
   background: -o-linear-gradient(110deg, #020024 0%, rgba(218, 226, 228, 0.992017) 9%, #00d4ff 100%);
   background: linear-gradient(340deg, #020024 0%, rgba(218, 226, 228, 0.992017) 9%, #00d4ff 100%);
-  color: #333; }
+  color: #333;
+  font-family: "Lato"; }
 
 .about {
   max-width: 700px;
@@ -374,7 +376,8 @@ html {
   grid-row-gap: 16px; }
 
 .header__title {
-  color: darkblue; }
+  color: darkblue;
+  font-family: "Roboto Slab"; }
   .header__title--red {
     color: darkred; }
 
