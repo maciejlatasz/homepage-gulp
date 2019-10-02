@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -13,7 +13,8 @@ html {
 .body {
 	background: rgb(2, 0, 36);
 	background: linear-gradient(340deg, rgba(2, 0, 36, 1) 0%, rgba(218, 226, 228, 0.9920168751094187) 9%, rgba(0, 212, 255, 1) 100%);
-	color: #333;
+  color: #333;
+  font-family: "Lato";
 }
 
 .about {
@@ -77,6 +78,7 @@ html {
 .header {
   &__title {
     color: darkblue;
+    font-family: "Roboto Slab";
     &--red {
       color: darkred;
     }

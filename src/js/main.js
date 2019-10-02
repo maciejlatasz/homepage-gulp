@@ -85,3 +85,13 @@ navigationSwitcher.addEventListener(`click`, (e) => {
 const navigationList = document.querySelector(`.navigation__list--js`);
 navigationList.classList.toggle(`navigation__list--visible`);
 });
+
+const focusInput = document.querySelector('.focus--js');
+
+if localStorage.getItem('focusInput').length > 0) {
+  focusInput.value = localStorage.getItem('focusInput')
+}
+
+focusInput.addEventListener('keyup', (e) => {
+  localStorage.setItem('focusInput', e.target.value);
+});

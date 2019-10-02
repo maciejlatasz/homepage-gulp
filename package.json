@@ -48,5 +48,7 @@
       "@babel/preset-env"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-open": "^3.0.1"
+  }
 }
